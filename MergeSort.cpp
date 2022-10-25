@@ -12,16 +12,16 @@ void merge(int array[], int const left, int const mid,
 	auto const subArrayTwo = right - mid;
 
 	// Create temp arrays
-	auto *leftArray = new int[subArrayOne],
+	int *leftArray = new int[subArrayOne],
 		*rightArray = new int[subArrayTwo];
 
 	// Copy data to temp arrays leftArray[] and rightArray[]
-	for (auto i = 0; i < subArrayOne; i++)
+	for (int i = 0; i < subArrayOne; i++)
 		leftArray[i] = array[left + i];
-	for (auto j = 0; j < subArrayTwo; j++)
+	for (int j = 0; j < subArrayTwo; j++)
 		rightArray[j] = array[mid + 1 + j];
 
-	auto indexOfSubArrayOne
+	int indexOfSubArrayOne
 		= 0, // Initial index of first sub-array
 		indexOfSubArrayTwo
 		= 0; // Initial index of second sub-array
@@ -60,8 +60,8 @@ void merge(int array[], int const left, int const mid,
 		indexOfSubArrayTwo++;
 		indexOfMergedArray++;
 	}
-	delete[] leftArray;
-	delete[] rightArray;
+	delete[] leftArray; // to delele the temporarily created left array
+	delete[] rightArray; // to delele the temporarily created right array
 }
 
 // begin is for left index and end is
