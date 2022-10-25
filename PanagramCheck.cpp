@@ -1,4 +1,4 @@
-#include<bits/stc++>
+#include<bits/stdc++>
 using namespace std;
 
 bool checkIfPangram(string sentence) 
