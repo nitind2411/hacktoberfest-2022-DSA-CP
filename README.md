@@ -1,9 +1,7 @@
 # hacktoberfest-2022-DSA-CP
 This Repository will contain Concepts of DSA and Competitive Programming in any language
 
-
-
-![Hacktoberfest 2021](hacktoberfest2021.PNG)
+# Hacktoberfest-2022
 
 # Upload Different Types of Programs in any Language
 
