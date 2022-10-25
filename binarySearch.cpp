@@ -15,7 +15,7 @@ int binarySearch(int arr[], int l, int r, int x)
 			return m;
 
 		// If x greater, ignore left half
-		if (arr[m] < x)
+		else if (arr[m] < x) //in case of else if, if the upper condition is true, this one will not run
 			l = m + 1;
 
 		// If x is smaller, ignore right half
@@ -34,8 +34,9 @@ int main(void)
 	int x = 10;
 	int n = sizeof(arr) / sizeof(arr[0]);
 	int result = binarySearch(arr, 0, n - 1, x);
-	(result == -1)
-		? cout << "Element is not present in array"
-		: cout << "Element is present at index " << result;
+	if(result == -1)
+		 cout << "Element is not present in array";
+	else
+                 cout << "Element is present at index " << result;
 	return 0;
 }
