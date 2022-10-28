@@ -4,7 +4,7 @@ using namespace std;
 // Linearly search x in arr[]. If x is present then return
 // its location, otherwise return -1
 
-int search(int arr[], int n, int x)
+int search(int *arr, int n, int x) //accepting the array in dynamic form
 {
     int i;
     for (i = 0; i < n; i++)
